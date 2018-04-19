@@ -12,10 +12,11 @@ pipeline {
       steps {
         echo 'what was this step'
       }
-    stage('Shared Lib') {
-           steps {
-               helloWorld("Jenkins")
-           }
-        }
     }
+    stage('Shared Lib') {
+      steps {
+        helloWorld("Jenkins")
+      }
+    }
+  }
 }
