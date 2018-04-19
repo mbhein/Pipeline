@@ -4,9 +4,6 @@ pipeline {
       image 'maven:alpine'
     }
   }
-  libraries {
-    lib("SharedLibs")
-  }
   stages {
     stage('Build') {
       steps {
